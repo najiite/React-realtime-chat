@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    html {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+      .nav-link {
+        @apply text-xl text-teal-900 hover:text-teal-500 font-semibold 
+      }
+  
+      .t-btn {
+        @apply rounded-lg text-slate-50 px-8 py-2 font-bold hover:shadow-2xl hover:scale-110
+      }
+  
+      .heading {
+          @apply text-6xl text-white font-bold my-5
+      }
+  
+      .input {
+          @apply appearance-none bg-transparent border-b-2 text-neutral-700 placeholder:text-neutral-700 border-neutral-500 focus:outline-none focus:border-blue-600 mt-3 w-full my-8
+      }
+      .chat-bubble-receiver {
+          @apply bg-gray-200 text-sky-900 rounded-2xl px-3 pt-3 my-2 mr-20 ml-2
+      }
+      .chat-bubble-sender {
+          @apply bg-blue-800 text-white rounded-2xl px-3 pt-3 my-2 ml-20 mr-2
+      }
+    }
